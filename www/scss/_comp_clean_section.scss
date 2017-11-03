@@ -1,0 +1,32 @@
+@import 'colors';
+
+.clean-section {
+  color: $white;
+
+  .row {
+    .col:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .section-content {
+        width: 50%;
+
+        h2 {
+          display: inline-block;
+        }
+
+        p {
+          color: $gray--light;
+        }
+      }
+    }
+
+    .col:last-child {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

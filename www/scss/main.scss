@@ -1,0 +1,17 @@
+@import 'grid';
+@import 'colors';
+@import 'fonts';
+@import 'comp_port_item';
+@import 'comp_clean_head';
+@import 'comp_clean_section';
+
+/* GLOBAL */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $gray--dark;
+}

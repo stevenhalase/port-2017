@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700');
+
+$fa: FontAwesome;
+$lato: 'Lato', sans-serif;
+
+h1 {
+  font-size: 59px;
+  font-family: $lato;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: $lato;
+}
+
+h3 {
+  font-size: 28px;
+  font-family: $lato;
+}
+
+h4 {
+  font-size: 23px;
+  font-family: $lato;
+}
+
+p {
+  font-size: 14px;
+  font-family: $lato;
+}
