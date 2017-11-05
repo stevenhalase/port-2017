@@ -1,0 +1,97 @@
+.mean-container {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: #ecf0f1;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translate(-100%);
+  transition: all .5s ease-in-out;
+}
+
+.code-container {
+  opacity: 0;
+  background-color: #2d2d2d;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: calc(100vw - 300px);
+  padding-left: 50px;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%);
+  transition: all .5s ease-in-out;
+
+  pre {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+
+    code {
+      position: relative;
+    }
+
+    code[class*="language-"], pre[class*="language-"] {
+      text-shadow: none!important;
+    }
+
+    .token.operator {
+      background: none;
+    }
+  }
+}
+
+.start-tour {
+  position: fixed;
+  top: 50%;
+  left: 300px;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+
+  .fa-stack {
+    width: 1.1em;
+    height: 1.1em;
+    line-height: 1.1em;
+  }
+
+  .fa-circle {
+    font-size: 1.1em;
+    color: #FFF;
+    text-shadow: 2px 0px 69px rgba(0,0,0,0.3);
+    cursor: pointer;
+
+    &:hover {
+      text-shadow: 2px 0px 69px rgba(0,0,0,0.6);
+
+      & + .fa-play-circle {
+        color: #2980b9;
+      }
+      & + .fa-stop-circle {
+        color: #c0392b;
+      }
+    }
+  }
+
+  .fa-play-circle {
+    color: #3498db;
+    pointer-events: none;
+  }
+  .fa-stop-circle {
+    color: #e74c3c;
+    pointer-events: none;
+  }
+}

@@ -5,13 +5,18 @@
 @import 'comp_clean_head';
 @import 'comp_clean_section';
 
+@import 'material';
+@import 'animate';
+@import 'slide';
+
 /* GLOBAL */
 
 * {
   box-sizing: border-box;
+  text-shadow: none;
 }
 
 body {
   margin: 0;
-  background-color: $gray--dark;
+  background-color: $gray--extra-dark;
 }
